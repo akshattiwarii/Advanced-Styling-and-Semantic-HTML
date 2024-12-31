@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(19, 198, 238, 0.9);
+}
+
+.logo img {
+    width: 100px;
+    height: 85px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(62, 66, 59);
+    font-weight: 500;
+    transition: 0.3s ease 0s;
+}
+
+.nav-links a:hover {
+    color: azure;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.searchbar input {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.searchbar label i {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 5rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    padding: 5px;
+    cursor: pointer;
+}
+
+article h1 {
+    max-width: 350px;
+}
+
+article img {
+    width: 300px;
+    height: 300px;
+}
+
+article p {
+    max-width: 400px;
+    text-align: center;
+}
+
+article:hover {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.footer {
+    padding: 5rem 1rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-col {
+    position: relative;
+    bottom: 40px;
+}
+
+.footer-col img {
+    width: 100px;
+    height: 85px;
+}
+
+.footer-p {
+    opacity: 0.7;
+    margin-bottom: 2rem;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social i {
+    color: black;
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    opacity: 0.7;
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease 0s;
+}
+
+.footer-social i:hover {
+    opacity: 1;
+    background-color: #35373b;
+}
+
+.h46 {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+}
+
+.footer-col-main {
+    margin-top: -1rem;
+}
+
+.footer-col-main a {
+    display: block;
+    margin-bottom: 1rem;
+    color: black;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: color 0.3s ease 0s;
+}
+
+.footer-col-main a:hover {
+    color: blue;
+}
+
+.footer-bar {
+    margin: auto;
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: black;
+}
+
+@media (max-width: 900px) {
+    section {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer {
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (max-width: 620px) {
+    section {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
